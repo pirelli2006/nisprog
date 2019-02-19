@@ -32,7 +32,7 @@ enum npstate_t npstate;
 const struct cmd_tbl_entry np_cmdtable[];
 
 /*
- * Explain command line usage
+ * Объяснение использования командной строки - справка
  */
 static void do_usage (void) {
 	fprintf( stderr,	"nisprog utility for Nissan ECUs\n\n"
@@ -69,7 +69,7 @@ static int np_init(void) {
 
 int main(int argc, char **argv) {
 	int i ;
-	const char *startfile=NULL;	/* optional commands to run at startup */
+	const char *startfile=NULL;	/* дополнительные команды при запуске */
 
 	dbg_stream = tmpfile();
 	if (!dbg_stream) {
